@@ -1,5 +1,5 @@
 import unittest
-from person import Person
+from personu import Person
 
 
 #
