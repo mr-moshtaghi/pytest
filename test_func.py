@@ -1,4 +1,5 @@
 import func
+import pytest
 
 
 class TestFunc:
@@ -21,3 +22,5 @@ class TestFunc:
         assert func.division(21, 3) == 7
         assert func.division(15, -3) == -5
         assert func.division(11, 1) == 11
+        with pytest.raises(ZeroDivisionError):
+            func.division(4, 0)
